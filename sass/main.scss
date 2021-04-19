@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+// import Canela
+@font-face {
+	font-family: "Canela";
+	src: url("../css/Canela.woff2") format("woff2"),
+		url("../css/Canela.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+}
+
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css2?family=Cambay:wght@400;700&display=swap");
+
+// Set your brand colors
+$verde: #9bb678;
+// $brown: #757763;
+$rose-light: #ffebee;
+
+// Update Bulma's global variables
+// $grey-dark: $brown;
+$grey-light: $rose-light;
+// $grey-lighter: $beige-lighter;
+$primary: $verde;
+// $link: $pink;
+
+// Update some of Bulma's component variables
+$body-background-color: white;
+$body-family: "Canela", serif;
+$family-secondary: "Cambay", sans-serif;
+$text-strong: inherit;
+$title-color: inherit;
+$subtitle-color: inherit;
+$title-weight: 700;
+$subtitle-weight: 700;
+$body-size: 18px;
+$navbar-item-color: white;
+$navbar-item-hover-color: $primary;
+$navbar-item-active-color: $primary;
+
+// Import only what you need from Bulma
+@import "../bulma/bulma.sass";
+
+.is-size-0 {
+	font-size: 4rem;
+}
+
+.navbar-item img {
+	max-height: none;
+}
+
+.head-home {
+	background: url(../img/header-home.jpg) center / cover;
+}
+.head-historia {
+	background: url(../img/header-historia.jpg) center / cover;
+}
+.head-metodo {
+	background: url(../img/header-metodo.jpg) center / cover;
+}
+
+.banner-historia {
+	background: url(../img/bg-historia.jpg) center bottom / cover;
+}
+
+.bg-metodo {
+	background: url(../img/bg-metodo.jpg) center top / cover;
+}
+.bg-home {
+	background: url(../img/bg-home.jpg) center top / cover;
+}
+
+.banner-metodo {
+	background: url(../img/banner-metodo.jpg) center / cover;
+}
+
+.banner-home {
+	background: url(../img/banner-home.jpg) center / cover;
+	top: -7rem;
+}
+
+.title.is-overlay {
+	width: 100%;
+	top: 25rem;
+	bottom: initial;
+}
+
+.br-1 {
+	border-right: 2px solid $primary;
+}
+
+.hablamos {
+	padding: 1.5rem 5rem;
+}
+
+@media screen and (max-width: 767px) {
+	.is-size-0 {
+		font-size: 2.5rem;
+	}
+
+	.banner-home {
+		top: initial;
+	}
+
+	.br-1 {
+		border-right: 0;
+	}
+
+	.bg-metodo .columns .column.is-4,
+	.bg-metodo .columns .content {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.title.is-overlay {
+		top: 18rem;
+	}
+
+	.navbar-burger {
+		margin: auto;
+	}
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1407px) {
+	.title.is-overlay {
+		top: 16rem;
+	}
+}
