@@ -15,13 +15,15 @@
 
 // Set your brand colors
 $verde: #9bb678;
+$azul: blue;
 // $brown: #757763;
 $rose-light: #ffebee;
+$rose-lighter: #FFF3F5;
 
 // Update Bulma's global variables
 // $grey-dark: $brown;
 $grey-light: $rose-light;
-// $grey-lighter: $beige-lighter;
+$grey-lighter: $rose-lighter;
 $primary: $verde;
 // $link: $pink;
 
@@ -38,12 +40,14 @@ $body-size: 18px;
 $navbar-item-color: white;
 $navbar-item-hover-color: $primary;
 $navbar-item-active-color: $primary;
+$input-background-color: transparent;
 
 // Import only what you need from Bulma
 @import "../bulma/bulma.sass";
 
 .is-size-0 {
 	font-size: 4rem;
+	line-height: 1.2;
 }
 
 .navbar-item img {
@@ -59,6 +63,18 @@ $navbar-item-active-color: $primary;
 .head-metodo {
 	background: url(../img/header-metodo.jpg) center / cover;
 }
+.head-gracias {
+	background: url(../img/header-gracias.jpg) center / cover;
+}
+.head-contacto {
+	background: url(../img/header-contacto.jpg) center / cover;
+}
+.head-land {
+	background: url(../img/header-land.jpg) center / cover;
+}
+.head-sl {
+	background: url(../img/header-sl.jpg) center / cover;
+}
 
 .banner-historia {
 	background: url(../img/bg-historia.jpg) center bottom / cover;
@@ -70,6 +86,9 @@ $navbar-item-active-color: $primary;
 .bg-home {
 	background: url(../img/bg-home.jpg) center top / cover;
 }
+.bg-land {
+	background: url(../img/bg-land.jpg) center top / cover;
+}
 
 .banner-metodo {
 	background: url(../img/banner-metodo.jpg) center / cover;
@@ -78,6 +97,14 @@ $navbar-item-active-color: $primary;
 .banner-home {
 	background: url(../img/banner-home.jpg) center / cover;
 	top: -7rem;
+}
+.banner-sl {
+	background: url(../img/banner-sl.jpg) center / cover;
+	top: -9rem;
+	margin-bottom: -3rem;
+}
+.banner-sl2 {
+	background: url(../img/banner-sl2.jpg) center / cover;
 }
 
 .title.is-overlay {
@@ -90,9 +117,90 @@ $navbar-item-active-color: $primary;
 	border-right: 2px solid $primary;
 }
 
+.bl-1 {
+	border-left: 1px solid #CADCBD;
+}
+
 .hablamos {
 	padding: 1.5rem 5rem;
 }
+
+.input::placeholder, .textarea::placeholder {
+	font-family: $family-secondary;
+	color: $primary;
+	text-transform: uppercase;
+	opacity: .8;
+}
+
+.button_wide {
+	padding: 1.5rem 5rem;
+}
+
+
+.image_icons {
+	height: 57px;
+	align-items: center;
+}
+
+
+.lista p {
+	margin-bottom: 0 !important;
+	padding: 0 2rem;
+}
+
+.lista hr {
+	height: 1px;
+}
+
+
+.planes .content {
+	height: 70vh;
+	padding: 3.5rem 3rem 5rem;
+}
+
+
+
+.flower-bg-left {
+	top: -15%;
+	z-index: -1;
+}
+
+.flower-bg-left2 {
+	top: 18%;
+	z-index: 10;
+}
+
+.figure-bg-left {
+	top: 5%;
+	z-index: -1;
+}
+
+.figure-bg-left2 {
+	top: 65%;
+	z-index: -1;
+}
+
+.figure-bg-left3 {
+	top: 30%;
+	z-index: -1;
+}
+
+.flower-bg-right {
+	right: 0;
+	bottom: -15%;
+	left: unset;
+	top: unset;
+	// z-index: -1;
+}
+
+.flower-bg-right2 {
+	right: 0;
+	bottom: 5%;
+	left: unset;
+	top: unset;
+	// z-index: -1;
+}
+
 
 @media screen and (max-width: 767px) {
 	.is-size-0 {
