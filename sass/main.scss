@@ -18,7 +18,7 @@ $verde: #9bb678;
 $azul: blue;
 // $brown: #757763;
 $rose-light: #ffebee;
-$rose-lighter: #FFF3F5;
+$rose-lighter: #fff3f5;
 
 // Update Bulma's global variables
 // $grey-dark: $brown;
@@ -118,30 +118,29 @@ $input-background-color: transparent;
 }
 
 .bl-1 {
-	border-left: 1px solid #CADCBD;
+	border-left: 1px solid #cadcbd;
 }
 
 .hablamos {
 	padding: 1.5rem 5rem;
 }
 
-.input::placeholder, .textarea::placeholder {
+.input::placeholder,
+.textarea::placeholder {
 	font-family: $family-secondary;
 	color: $primary;
 	text-transform: uppercase;
-	opacity: .8;
+	opacity: 0.8;
 }
 
 .button_wide {
 	padding: 1.5rem 5rem;
 }
 
-
 .image_icons {
 	height: 57px;
 	align-items: center;
 }
-
 
 .lista p {
 	margin-bottom: 0 !important;
@@ -152,13 +151,10 @@ $input-background-color: transparent;
 	height: 1px;
 }
 
-
 .planes .content {
 	height: 70vh;
 	padding: 3.5rem 3rem 5rem;
 }
-
-
 
 .flower-bg-left {
 	top: -15%;
@@ -201,7 +197,6 @@ $input-background-color: transparent;
 	// z-index: -1;
 }
 
-
 @media screen and (max-width: 767px) {
 	.is-size-0 {
 		font-size: 2.5rem;
@@ -209,6 +204,10 @@ $input-background-color: transparent;
 
 	.banner-home {
 		top: initial;
+	}
+
+	.bg-home {
+		background: url(../img/bg-home.jpg) 15% top / cover;
 	}
 
 	.br-1 {
@@ -228,8 +227,18 @@ $input-background-color: transparent;
 	.navbar-burger {
 		margin: auto;
 	}
-}
 
+	.maria, .col-3 {
+		padding: 2rem 1.5rem !important;
+	}
+
+	.flower-bg-right,
+	.flower-bg-right2,
+	.flower-bg-left,
+	.flower-bg-left2 {
+		display: none;
+	}
+}
 
 @media screen and (min-width: 1024px) and (max-width: 1407px) {
 	.title.is-overlay {
