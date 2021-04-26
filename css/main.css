@@ -2534,7 +2534,7 @@ a.tag:hover {
 .title {
   color: inherit;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.125;
 }
 .title strong {
@@ -10170,12 +10170,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background: url(../img/header-land.jpg) center/cover;
 }
 
-.head-sl {
-  background: url(../img/header-sl.jpg) center/cover;
+.head-micro {
+  background: url(../img/header-micro.jpg) center/cover;
 }
 
-.banner-historia {
-  background: url(../img/bg-historia.jpg) center bottom/cover;
+.head-sl {
+  background: url(../img/header-sl.jpg) center/cover;
 }
 
 .bg-metodo {
@@ -10190,6 +10190,14 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background: url(../img/bg-land.jpg) center top/cover;
 }
 
+.bg-micro {
+  background: url(../img/bg-micro.jpg) center top/cover;
+}
+
+.banner-historia {
+  background: url(../img/bg-historia.jpg) center bottom/cover;
+}
+
 .banner-metodo {
   background: url(../img/banner-metodo.jpg) center/cover;
 }
@@ -10197,6 +10205,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .banner-home {
   background: url(../img/banner-home.jpg) center/cover;
   top: -7rem;
+}
+
+.banner-micro {
+  background: url(../img/banner-home.jpg) center/cover;
+  top: -9rem;
 }
 
 .banner-sl {
@@ -10302,7 +10315,17 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     font-size: 2.5rem;
   }
 
-  .banner-home {
+  .navbar-item, .navbar-link {
+    color: black;
+  }
+
+  .button_wide {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .banner-home,
+.banner-micro {
     top: initial;
   }
 
