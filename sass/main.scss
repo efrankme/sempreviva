@@ -250,11 +250,11 @@ $input-background-color: transparent;
 	.banner-micro {
 		top: initial;
 	}
-
+	
 	.bg-home {
 		background: url(../img/bg-home.jpg) 15% top / cover;
 	}
-
+	
 	.br-1 {
 		border-right: 0;
 	}
@@ -264,25 +264,33 @@ $input-background-color: transparent;
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 	}
-
+	
 	.navbar-burger {
 		margin: auto;
 	}
-
+	
 	.maria, .col-3 {
 		padding: 2rem 1.5rem !important;
 	}
-
+	
 	.container.is-fluid, p.px-6 {
 		padding: 0 !important;
 	}
-
-
+	
+	
 	.flower-bg-right,
 	.flower-bg-right2,
 	.flower-bg-left,
 	.flower-bg-left2 {
 		display: none;
+	}
+}
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1407px) {
+	.banner-micro {
+		top: -5rem;
 	}
 }
 

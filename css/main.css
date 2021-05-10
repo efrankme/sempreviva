@@ -10382,3 +10382,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     display: none;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1407px) {
+  .banner-micro {
+    top: -5rem;
+  }
+}
