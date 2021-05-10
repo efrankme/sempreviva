@@ -6,6 +6,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Sempreviva - Landing</title>
 		<link rel="stylesheet" href="../css/main.css" />
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '795902828003214');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=795902828003214&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+    
 	</head>
 	<body>
 		<header class="hero is-fullheight head-land">
@@ -28,7 +48,7 @@
               para que puedas revivir tu boda cada día              
 							</h2>
 
-							<a href="#" class="button button_wide is-primary is-outlined is-radiusless is-medium is-family-secondary is-size-6">SÍ, QUIERO</a>
+							<a href="#" class="button button-manual button_wide is-primary is-outlined is-radiusless is-medium is-family-secondary is-size-6">SÍ, QUIERO</a>
 						</div>
 					</div>
 				</div>
@@ -189,6 +209,155 @@
       <div class="block is-overlay flower-bg-right2"><figure><img src="../img/flower-bg-right2.png" alt=""></figure></div>
 
     </section>
+
+
+
+
+
+    <!-- Modal suscribe -->
+
+    <div id="newsletter" class="modal">
+      <div class="modal-background cerrar-news"></div>
+      <div class="modal-card has-text-centered">
+        <header class="modal-card-head">
+          <h2 class="modal-card-title">
+            Sempreviva
+          </h2>
+          <button class="delete cerrar-news" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <h3 class="subtitle">
+            Quiero ver el vídeo y así conocer cómo tener un ramo de novia natural que dure años
+          </h3>
+          <form
+            class="px-6"
+            action="https://82c437b7.sibforms.com/serve/MUIEAOMoci2fNSKZBdpXVetKWQYozSpnRPycDQ5fWUrqPBNF26yvzYuLQr2Pf10AssXEB8geVJP0Ug8TrurGS7rDGTlB-M30BXPKAa9jxjuzccnVPxVq3UUqJ83n9zsDEkf53wbcJ1CWc_8CTWTEaksD1e_twx8h-eqzwQARhgMqM9L3kqfCXSekTltUdlPVvlHBsXCbhsOZReFp"
+            accept-charset="UTF-8"
+            method="POST"
+          >
+
+            <div class="field">
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  name="NOMBRE"
+                  id="subscriber_name"
+                  placeholder="Nombre"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <input
+                  class="input"
+                  type="email"
+                  name="EMAIL"
+                  id="subscriber_email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+            </div>
+
+
+            <div class="field">
+              <div class="control">
+                <button
+                  class="button is-link is-fullwidth"
+                  name="commit"
+                  data-disable-with="Procesando"
+                >
+                  Sí, quiero ver el vídeo
+                </button>
+              </div>
+            </div>
+
+            <input type="hidden" name="email_address_check" value="" class="input--hidden">
+            <input type="hidden" name="locale" value="es">
+
+            <!--
+            <div class="field" >
+              <input type="checkbox" name="politica" required />
+              <label id="texto-poli" style="cursor: pointer;">
+                He leído y acepto la política de privacidad
+              </label>
+            </div>
+            -->
+          </form>
+        </section>
+        <footer class="modal-card-foot">
+          <!-- <button class="button cerrar-modal">Cerrar</button> -->
+        </footer>
+      </div>
+    </div>
+
+
+    <!-- Modal Politica -->
+
+    <div id="politica" class="modal">
+      <div class="modal-background cerrar-pol"></div>
+      <div class="modal-content p-5 has-background-white">
+        <div class="content">
+          
+          <p>POL&Iacute;TICA DE PRIVACIDAD</p>
+
+        </div>
+      </div>
+      <button
+        class="modal-close is-large cerrar-pol"
+        aria-label="close"
+      ></button>
+    </div>
+
+    <script>
+      const newsletter = document.querySelector("#newsletter");
+      const politica = document.querySelector("#politica");
+
+      addEventListener("load", cargaBotones);
+
+      function cargaBotones() {
+        let manuales = document.querySelectorAll(".button-manual");
+        manuales.forEach(function (boton) {
+          boton.addEventListener("click", function () {
+            newsletter.classList.add("is-active");
+            newsletter.classList.add("is-clipped");
+          });
+        });
+
+        let cierres = document.querySelectorAll(".cerrar-news");
+        cierres.forEach((boton) => {
+          boton.addEventListener("click", function () {
+            newsletter.classList.remove("is-active");
+            newsletter.classList.remove("is-clipped");
+          });
+        });
+
+        /*
+        let texto_poli = document.querySelector("#texto-poli");
+        texto_poli.addEventListener("click", function () {
+          // newsletter.classList.remove("is-active");
+          // newsletter.classList.remove("is-clipped");
+          politica.classList.add("is-active");
+          politica.classList.add("is-clipped");
+        });
+        */
+      }
+
+      let cierrespol = document.querySelectorAll(".cerrar-pol");
+      cierrespol.forEach((boton) => {
+        boton.addEventListener("click", function () {
+          politica.classList.remove("is-active");
+          politica.classList.remove("is-clipped");
+        });
+      });
+    </script>
+
+
+
+
 
 	</body>
 </html>

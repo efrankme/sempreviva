@@ -20,4 +20,25 @@ document.addEventListener("DOMContentLoaded", () => {
 			});
 		});
 	}
+
+	window.cookieconsent.initialise({
+		palette: {
+			popup: {
+				background: "#efefef",
+				text: "#404040",
+			},
+			button: {
+				background: "#9bb678",
+			},
+		},
+		theme: "edgeless",
+		position: "bottom-left",
+		content: {
+			message:
+				"Utilizamos cookies propias y de terceros para mejorar tu experiencia de compra según tus preferencias, mediante el análisis de tus hábitos de navegación. Si continúas navegando, consideramos que aceptas su uso. Puedes obtener más información pulsando en ",
+			dismiss: "Aceptar",
+			link: "Política de Cookies.",
+			href: "https://www.sempreviva.es/es/cookies-es",
+		},
+	});
 });
